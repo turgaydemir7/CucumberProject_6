@@ -72,6 +72,30 @@ public class DialogContent extends Parent{
         @FindBy(xpath = "//*[text()='Error!']")
         public WebElement AlertMessage;
 
+    @FindBy(name = "[name='payee.name']")
+    public WebElement payeeName;
+    @FindBy(name = " [name='payee.address.street']")
+    public WebElement payeeAddresStreet;
+    @FindBy(name = "[name='payee.address.city']")
+    public WebElement payeeAdressCity;
+    @FindBy(name = " [name='payee.address.state']")
+    public WebElement payeeAdressState;
+    @FindBy(name = " [name='payee.address.zipCode']")
+    public WebElement payeezipcode;
+    @FindBy(name = " [name='payee.phoneNumber']")
+    public WebElement payeePhoneNumber;
+    @FindBy(name = "[name='payee.accountNumber']")
+    public WebElement payeeAcountNumber;
+    @FindBy(name = "[name='verifyAccount']")
+    public WebElement payeeVerifyAccount;
+    @FindBy(name = " [name='amount']")
+    public WebElement payeeAmount;
+    @FindBy(name = "[name='fromAccountId']")
+    public WebElement payeefromAccountId;
+    @FindBy(xpath = "//input[@class='button']")
+    public WebElement payeeButton;
+
+
 
 
         public void findAndSend(WebElement element,String text){
