@@ -1,14 +1,14 @@
 package Pages;
 
 import Utilities.GrWD;
-import org.openqa.selenium.By;
+import org.checkerframework.framework.qual.QualifierForLiterals;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class RegisterPages extends Parent{
+public class DialogContent extends Parent{
 
-    public RegisterPages() {
+    public DialogContent() {
         PageFactory.initElements(GrWD.getDriver(), this);
     }
 
@@ -53,6 +53,20 @@ public class RegisterPages extends Parent{
 
         @FindBy(xpath = "//p[contains(text(), 'successfully')]")
         public  WebElement successMessage;
+
+        @FindBy(xpath = "(//*[@type='text'])[1]")
+        public WebElement UserLogin;
+
+        @FindBy(xpath = "//*[@type='password']")
+        public WebElement UserPassword;
+
+        @FindBy(xpath = "//input[@type='submit']")
+        public WebElement logInBttn;
+
+        @FindBy(css = "[class='smallText']>b")
+        public WebElement succesMessge;
+
+
 
         public void findAndSend(WebElement element,String text){
 
