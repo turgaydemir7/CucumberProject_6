@@ -1,14 +1,19 @@
 Feature: Login Functionality
 
-  Scenario: Login to Account
+  Background:
 
     Given Navigate to site
+
+  Scenario: Login to Account
+
+
+
 
     When User sending Keys for Login
 
     Then User should Login successfully
 
-    And User Logout successfully
+    And User Logout
 
   Scenario Outline: Wrong user login
 
