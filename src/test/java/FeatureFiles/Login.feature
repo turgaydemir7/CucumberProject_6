@@ -19,11 +19,11 @@ Feature: Login Functionality
 
     When User sending Keys for "<username>" and "<password>" click to login
 
-    Then Allert massage should be displayed
+    Then Alert massage should be displayed
 
     Examples:
-      | username | password   |
-      | MECorlu  | Corlu860   |
-      | Techno   | Technogrp3 |
-      | Joker    | Batman1    |
+      | username | password     |
+      | MECorlu  | Corlu860     |
+      | Tech1no3 | Tech1nogrp34 |
+      | Joker12  | Batman114    |
 

@@ -66,10 +66,10 @@ public class DialogContent extends Parent{
         @FindBy(css = "[class='smallText']>b")
         public WebElement logInsuccesMessge;
 
-        @FindBy(xpath = "//a[@href='/parabank/logout.htm']")
+        @FindBy(xpath = "//a[text()='Log Out']")
         public WebElement logOutBttn;
 
-        @FindBy(css = "[class='error']")
+        @FindBy(xpath = "//*[text()='Error!']")
         public WebElement AlertMessage;
 
 

@@ -39,8 +39,8 @@ public class _02_LoginFeatureSteps {
 
     }
 
-    @Then("Allert massage should be displayed")
-    public void allertMassageShouldBeDisplayed() {
+    @Then("Alert massage should be displayed")
+    public void alertMassageShouldBeDisplayed() {
 
         Assert.assertTrue(dc.AlertMessage.isDisplayed(),"TEST FAİL or fail");
     }
