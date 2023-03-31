@@ -12,7 +12,7 @@ public class RegisterPages extends Parent{
         PageFactory.initElements(GrWD.getDriver(), this);
     }
 
-        @FindBy(xpath ="//a[@href='register.htm']" )
+        @FindBy(xpath ="//a[text()='Register']" )
         public WebElement registerBtn;
 
         @FindBy(css = "[id='customer.firstName']")

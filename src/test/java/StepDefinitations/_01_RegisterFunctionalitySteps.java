@@ -20,6 +20,7 @@ public class _01_RegisterFunctionalitySteps extends GrWD {
 
     @When("User sending Keys for Register")
     public void userSendingKeysForRegister() {
+        rp.clickFunction(rp.registerBtn);
         rp.findAndSend(rp.FirstName,"Muhammed Enes");
         rp.findAndSend(rp.LastName,"Erol");
         rp.findAndSend(rp.Address,"Fevzipaşa Mah.Dizdar Geçidi No:17");
@@ -31,7 +32,7 @@ public class _01_RegisterFunctionalitySteps extends GrWD {
         rp.findAndSend(rp.Username,"MECorlu");
         rp.findAndSend(rp.Password,"Corlu860");
         rp.findAndSend(rp.repeatPassword,"Corlu860");
-        rp.clickFunction(rp.registerBtn);
+        rp.clickFunction(rp.Confirm);
 
 
     }
